@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow coba"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 10:17:27 PM"/>
+        <attribute name="created" value="QVNVUztBU1VTLVRVRi1GMTUtRFo7MjAyNC0wOS0xNjsxMDo1NDoyMSBBTTsyNjAy"/>
+        <attribute name="edited" value="QVNVUztBU1VTLVRVRi1GMTUtRFo7MjAyNC0wOS0xODsxMDoxNzoyNyBQTTszOzI3MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="umur" type="Integer" array="False" size=""/>
+            <declare name="tinggi, total" type="Real" array="False" size=""/>
+            <declare name="jawaban" type="String" array="False" size=""/>
+            <output expression="&quot;silahkan masukan nama anda: &quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;silahkan masukan umur anda: &quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;silahkan masukan tinggi anda: &quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <output expression="&quot;Apakah kamu bisa mengendarai motor(ya/tidak): &quot;" newline="True"/>
+            <input variable="jawaban"/>
+            <assign variable="total" expression="umur + tinggi"/>
+            <if expression="jawaban == &quot;ya&quot;">
+                <then>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="&quot;biodata anda&quot;" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="nama" newline="False"/>
+                    <output expression="umur" newline="True"/>
+                    <output expression="tinggi" newline="True"/>
+                    <output expression="&quot;apakah kamu bisa mengendarai motor: ya&quot;" newline="True"/>
+                    <output expression="total" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="&quot;biodata anda&quot;" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="nama" newline="False"/>
+                    <output expression="umur" newline="True"/>
+                    <output expression="tinggi" newline="True"/>
+                    <output expression="&quot;apakah kamu bisa mengendarai motor: tidak&quot;" newline="True"/>
+                    <output expression="total" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
